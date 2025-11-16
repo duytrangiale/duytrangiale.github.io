@@ -115,9 +115,8 @@ I am particularly interested in research and engineering roles involving **ML fo
 
 ---
 
-## Selected Publications
+## Selected Publications 
 
-A more complete list, including BibTeX and PDFs where available, will be added later.  
 Below are a few representative works:
 
 - [**A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions**](LINK_HERE)  
