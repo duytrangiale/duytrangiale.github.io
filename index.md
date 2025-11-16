@@ -149,7 +149,7 @@ Below are a few representative works:
 
 ## CV & Contact
 
-- **CV / Résumé:** *(link to a PDF in this repo or elsewhere once uploaded)*  
+- **CV / Résumé:** [Download PDF](Duy Le - Resume.pdf)
 - **Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
 - **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
