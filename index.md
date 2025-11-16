@@ -45,11 +45,11 @@ I am particularly interested in research and engineering roles involving **ML fo
 - 🎓 **PhD in Computational Modelling & Deep Learning**  
   Federation University, Australia – thesis on accelerated surrogate modelling of granular materials using artificial neural networks.
 
-- 🧠 Developed deep-learning surrogates achieving **30–100× speedups** over DEM simulations while maintaining physically meaningful behaviour.
+- 🧠 Developed deep-learning surrogates achieving **70–120× speedups** over DEM simulations while maintaining physically meaningful behaviour.
 
 - 💻 Built large-scale **data pipelines** and **training frameworks** for 3D particle simulations, using Python, PyTorch, NumPy/Pandas, and Slurm-based HPC workflows.
 
-- 📄 First author and co-author of peer-reviewed publications in **machine learning**, **computer vision**, **robotics**, and **granular flow modelling**.
+- 📄 First author of peer-reviewed publications in **machine learning**, **computer vision**, **robotics**, and **granular flow modelling**.
 
 ---
 
@@ -59,15 +59,14 @@ I am particularly interested in research and engineering roles involving **ML fo
 
 **Keywords:** Deep learning, DEM, surrogate modelling, 3D convolutions, industrial flows  
 
-- Developed a deep-learning surrogate model to approximate 3D granular flow dynamics in industrial equipment such as **hoppers** and **rotating drums**.  
-- Designed 3D CNN / UNet-style architectures to capture particle interactions and boundary effects.  
-- Achieved significant **runtime acceleration (30–100×)** compared to DEM while preserving key physical metrics such as mixing behaviour and energy trends.  
+- Developed a neural-network surrogate model to approximate 3D granular flow dynamics in industrial equipment such as **hoppers**, **rotating drums** and **blade mixer**.  
+- Designed 3D continuous convolutional neural network architectures to capture particle interactions and boundary effects.  
+- Achieved significant **runtime acceleration (70–120×)** compared to DEM while preserving key physical metrics such as mixing behaviour and energy trends.  
 - Implemented full training and evaluation pipeline, including data preprocessing, batching, model training, and physical post-processing.
 
-**Code (demo / simplified version):**  
-*(link here when ready, e.g.)*  
-[`granular-flow-surrogate`](https://github.com/duytrangiale/granular-flow-surrogate)
-
+**Publication:**  
+“A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions”, *Powder Technology*, 2025 (Under review).
+“Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers”, *The 33rd International Conference on Artificial Neural Networks*, 2024.
 ---
 
 ### 2. DEM Data Tools & Physical Metrics
@@ -81,10 +80,6 @@ I am particularly interested in research and engineering roles involving **ML fo
   - angular velocity fields and alignment measures  
   - collision-based metrics such as coefficients of restitution  
 - Used these tools to benchmark neural network surrogates against high-fidelity DEM baselines.
-
-**Code (planned/ongoing):**  
-*(link here when ready, e.g.)*  
-[`dem-data-tools`](https://github.com/duytrangiale/dem-data-tools)
 
 ---
 
