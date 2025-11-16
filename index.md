@@ -11,10 +11,10 @@ layout: default
 **Machine Learning & Computational Modelling Researcher**  
 Mulgrave, Melbourne, Australia  
 
-**Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
-**LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
-**GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
-**Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
+**📧 Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
+**🔗 LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
+**💻 GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
+**📚 Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
 
 </div>
 
@@ -120,23 +120,23 @@ I am particularly interested in research and engineering roles involving **ML fo
 A more complete list, including BibTeX and PDFs where available, will be added later.  
 Below are a few representative works:
 
-- **A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions**  
+- [**A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions**](LINK_HERE)  
   *Duy Le, Gary W. Delaney, Linh Nguyen, Truong Phung, David Howard, Gayan Kahandawa, Manzur Murshed*  
   *Powder Technology*, 2025 (under review).
 
-- **Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers**  
+- [**Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers**](https://link.springer.com/chapter/10.1007/978-3-031-72356-8_22)  
   *Duy Le, Linh Nguyen, Truong Phung, David Howard, Gayan Kahandawa, Manzur Murshed, Gary W. Delaney*  
   *33rd International Conference on Artificial Neural Networks (ICANN)*, 2024.
 
-- **Simple linear iterative clustering based low-cost pseudo-LiDAR for 3D object detection in autonomous driving**  
+- [**Simple linear iterative clustering based low-cost pseudo-LiDAR for 3D object detection in autonomous driving**](https://link.springer.com/article/10.1007/s11042-023-14439-5)  
   *Duy Le and Linh Nguyen*  
   *Multimedia Tools and Applications*, 2023.
 
-- **An Efficient Force-Feedback Hand Exoskeleton for Haptic Applications**  
+- [**An Efficient Force-Feedback Hand Exoskeleton for Haptic Applications**](https://link.springer.com/article/10.1007/s41315-021-00197-w)  
   *Duy Le and Linh Nguyen*  
   *International Journal of Intelligent Robotics and Applications*, 2021.
 
-- **An Efficient Multi-Vehicle Routing Strategy for Goods Delivery Services**  
+- [**An Efficient Multi-Vehicle Routing Strategy for Goods Delivery Services**](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9541547)  
   *Duy Le, Ying Men, Yunkang Luo, Yixuan Zhou, Linh Nguyen*  
   *IEEE International Conference on Advanced Robotics and its Social Impacts*, 2021.
 
@@ -156,11 +156,11 @@ Below are a few representative works:
 
 ## CV & Contact
 
-- **CV / Résumé:** [Download PDF](Duy_Le_Resume.pdf)
-- **Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
-- **LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
-- **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
-- **Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
+- **📄 CV / Résumé:** [Download PDF](Duy_Le_Resume.pdf)
+- **📧 Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
+- **🔗 LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
+- **💻 GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
+- **📚 Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
 
 
 Please feel free to reach out regarding opportunities in machine learning, scientific computing, and research engineering.
