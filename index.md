@@ -1,22 +1,18 @@
----
-title: "Duy Le"
-layout: default
----
-
 <div align="center">
 
-# Duy Le
+# **Duy (Edward) Le**
 
-**Machine Learning & Computational Modelling Researcher**
-
+### Machine Learning & Computational Modelling Researcher  
 Mulgrave, Melbourne, Australia  
-**Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com) · 
-**LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale) · 
-**GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
+
+📧 **Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
+🔗 **LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
+💻 **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)  
 
 </div>
 
 ---
+
 
 ## About
 
