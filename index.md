@@ -11,6 +11,8 @@ Mulgrave, Melbourne, Australia
 **Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
 **LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
 **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
+**Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
+
 
 ---
 
@@ -154,5 +156,7 @@ Below are a few representative works:
 - **Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
 - **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
+- **Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
+
 
 Please feel free to reach out regarding opportunities in machine learning, scientific computing, and research engineering.
