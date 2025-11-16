@@ -2,6 +2,9 @@
 title: "Duy (Edward) Le"
 layout: default
 ---
+<div align="center">
+
+<img src="me.jpg" alt="Duy Le" width="160" style="border-radius:50%;"><br>
 
 # Duy (Edward) Le
 
@@ -13,6 +16,7 @@ Mulgrave, Melbourne, Australia
 **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
 **Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
 
+</div>
 
 ---
 
