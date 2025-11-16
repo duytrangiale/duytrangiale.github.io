@@ -67,6 +67,7 @@ I am particularly interested in research and engineering roles involving **ML fo
 **Publication:**  
 - “A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions”, *Powder Technology*, 2025 (Under review).
 - “Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers”, *The 33rd International Conference on Artificial Neural Networks*, 2024.
+
 ---
 
 ### 2. DEM Data Tools & Physical Metrics
