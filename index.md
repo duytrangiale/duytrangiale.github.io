@@ -65,8 +65,8 @@ I am particularly interested in research and engineering roles involving **ML fo
 - Implemented full training and evaluation pipeline, including data preprocessing, batching, model training, and physical post-processing.
 
 **Publication:**  
-“A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions”, *Powder Technology*, 2025 (Under review).
-“Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers”, *The 33rd International Conference on Artificial Neural Networks*, 2024.
+- “A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions”, *Powder Technology*, 2025 (Under review).
+- “Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers”, *The 33rd International Conference on Artificial Neural Networks*, 2024.
 ---
 
 ### 2. DEM Data Tools & Physical Metrics
@@ -149,7 +149,7 @@ Below are a few representative works:
 
 ## CV & Contact
 
-- **CV / Résumé:** [Download PDF](Duy Le - Resume.pdf)
+- **CV / Résumé:** [Download PDF](Duy_Le_Resume.pdf)
 - **Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
 - **GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
