@@ -1,7 +1,6 @@
 ---
 title: "Duy (Edward) Le"
 layout: default
-css: style.css
 ---
 
 <p align="center">
