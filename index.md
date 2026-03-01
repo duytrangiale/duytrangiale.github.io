@@ -71,7 +71,7 @@ I am particularly interested in research and engineering roles involving **ML fo
 - Implemented full training and evaluation pipeline, including data preprocessing, batching, model training, and physical post-processing.
 
 **Publication:**  
-- “A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions”, *Powder Technology*, 2025 (Under review).
+- “A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions”, *Powder Technology*, 2026.
 - “Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers”, *The 33rd International Conference on Artificial Neural Networks*, 2024.
 
 ---
@@ -119,9 +119,9 @@ I am particularly interested in research and engineering roles involving **ML fo
 
 Below are a few representative works:
 
-- [**A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions**](LINK_HERE)  
+- [**A Neural Network Surrogate for Modelling Granular Flow Dynamics in Industrial Applications with Dynamic Boundary Conditions**](https://doi.org/10.1016/j.powtec.2026.122258)  
   *Duy Le, Gary W. Delaney, Linh Nguyen, Truong Phung, David Howard, Gayan Kahandawa, Manzur Murshed*  
-  *Powder Technology*, 2025 (under review).
+  *Powder Technology*, 2026.
 
 - [**Machine Learning Accelerated Prediction of 3D Granular Flows in Hoppers**](https://link.springer.com/chapter/10.1007/978-3-031-72356-8_22)  
   *Duy Le, Linh Nguyen, Truong Phung, David Howard, Gayan Kahandawa, Manzur Murshed, Gary W. Delaney*  
