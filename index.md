@@ -155,7 +155,7 @@ Below are a few representative works:
 
 ## CV & Contact
 
-- **📄 CV / Résumé:** [Download PDF](Duy Le - Resume.pdf)
+- **📄 CV / Résumé:** [Download PDF](DuyLe-Resume-github.pdf)
 - **📧 Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
 - **🔗 LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
 - **💻 GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
