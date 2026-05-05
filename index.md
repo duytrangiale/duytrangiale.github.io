@@ -14,7 +14,7 @@ Melbourne, Australia
 
 **📧 Email:** [duytrangiale@gmail.com](mailto:duytrangiale@gmail.com)  
 **🔗 LinkedIn:** [linkedin.com/in/duytrangiale](https://www.linkedin.com/in/duytrangiale)  
-**💻 GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale)
+**💻 GitHub:** [github.com/duytrangiale](https://github.com/duytrangiale) <br>
 **📚 Google Scholar:** [scholar.google.com](https://scholar.google.com.au/citations?user=HEg9VbAAAAAJ)
 
 
