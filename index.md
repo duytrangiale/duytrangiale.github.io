@@ -187,7 +187,7 @@ Below are a few representative works:
 ## Skills Overview
 
 **Languages:** Python, C, MATLAB, Java  
-**ML/AI:** PyTorch, TensorFlow, Scikit-learn, Open3D, Kubernetes, RAG, LLM
+**ML/AI:** PyTorch, TensorFlow, Scikit-learn, Open3D<br>
 **Data & Scientific Computing:** NumPy, Pandas, SciPy, data pipelines  
 **Simulation & Modelling:** Discrete Element Method (DEM), numerical methods, optimisation  
 **Tools:** Git, Slurm, Linux, HPC clusters  
