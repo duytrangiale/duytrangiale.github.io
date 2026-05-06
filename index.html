@@ -38,6 +38,102 @@
       line-height: 1.7;
     }
 
+    /* ========== CAROUSEL ========== */
+    .carousel {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 220px;
+      overflow: hidden;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .carousel-slides {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    
+    .carousel-slide {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      animation: fadeSlide 0.4s ease;
+    }
+    .carousel-slide.active { display: flex; }
+    
+    @keyframes fadeSlide {
+      from { opacity: 0; transform: scale(0.97); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    
+    .carousel-slide img {
+      width: 100%;
+      max-height: 185px;
+      object-fit: cover;
+      border-radius: 7px;
+    }
+    
+    .carousel-caption {
+      margin-top: 0.45rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--primary);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+    
+    .carousel-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-60%);
+      background: rgba(15, 76, 129, 0.55);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 30px; height: 30px;
+      cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.72rem;
+      transition: background 0.2s, transform 0.2s;
+      z-index: 3;
+    }
+    .carousel-btn:hover {
+      background: rgba(15, 76, 129, 0.85);
+      transform: translateY(-60%) scale(1.1);
+    }
+    .carousel-prev { left: 6px; }
+    .carousel-next { right: 6px; }
+    
+    .carousel-dots {
+      position: absolute;
+      bottom: 6px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 6px;
+      z-index: 3;
+    }
+    .carousel-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: rgba(15, 76, 129, 0.25);
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      border: 1px solid rgba(15, 76, 129, 0.3);
+    }
+    .carousel-dot.active {
+      background: var(--primary);
+      transform: scale(1.2);
+    }
+    .carousel-dot:hover { background: var(--accent); }
+
     /* ========== NAVBAR ========== */
     nav {
       position: fixed;
@@ -684,7 +780,7 @@
         <span class="badge">Surrogate Modelling</span>
         <span class="badge">DEM Simulation</span>
         <span class="badge">Computer Vision</span>
-        <span class="badge">HPC / Slurm</span>
+        <span class="badge">Mechatronics</span>
       </div>
 
       <div class="hero-socials">
@@ -803,15 +899,45 @@
 
         <!-- Project 1 -->
         <div class="project-card">
-          <div class="project-media">
-            <img src="assets/hopper.gif" alt="Granular Flow Surrogate">
+        <div class="project-media">
+          <div class="carousel" id="carousel-1">
+      
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <img src="assets/hopper.gif" alt="Hopper Simulation">
+                <span class="carousel-caption">Hopper</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/drum.gif" alt="Rotating Drum Simulation">
+                <span class="carousel-caption">Rotating Drum</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/large_mixer.gif" alt="Large Mixer Simulation">
+                <span class="carousel-caption">Large Mixer</span>
+              </div>
+            </div>
+      
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel('carousel-1', -1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel('carousel-1', 1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+      
+            <div class="carousel-dots">
+              <span class="carousel-dot active" onclick="goToSlide('carousel-1', 0)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-1', 1)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-1', 2)"></span>
+            </div>
+      
           </div>
-          <div class="project-body">
+        </div>
+        <div class="project-body">
             <p class="project-number">// 01</p>
             <h3>Neural Surrogate for 3D Granular Flow</h3>
             <div class="project-tags">
               <span class="tag">Deep Learning</span>
-              <span class="tag">DEM</span>
+              <span class="tag">Discrete Element Method</span>
               <span class="tag">Surrogate Modelling</span>
               <span class="tag">Scientific ML</span>
             </div>
@@ -1148,6 +1274,32 @@
     navLinks.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => navLinks.classList.remove('open'));
     });
+
+    // --- Carousel logic ---
+    function moveCarousel(id, dir) {
+      const carousel = document.getElementById(id);
+      const slides   = carousel.querySelectorAll('.carousel-slide');
+      const dots     = carousel.querySelectorAll('.carousel-dot');
+      let current    = [...slides].findIndex(s => s.classList.contains('active'));
+    
+      slides[current].classList.remove('active');
+      dots[current].classList.remove('active');
+      current = (current + dir + slides.length) % slides.length;
+      slides[current].classList.add('active');
+      dots[current].classList.add('active');
+    }
+    
+    function goToSlide(id, index) {
+      const carousel = document.getElementById(id);
+      carousel.querySelectorAll('.carousel-slide').forEach((s, i) => s.classList.toggle('active', i === index));
+      carousel.querySelectorAll('.carousel-dot').forEach((d, i) => d.classList.toggle('active', i === index));
+    }
+    
+    // Auto-advance every 3 seconds
+    function autoAdvance(id, intervalMs) {
+      setInterval(() => moveCarousel(id, 1), intervalMs);
+    }
+    autoAdvance('carousel-1', 3000);
 
     // --- Back to top ---
     const btn = document.getElementById('back-to-top');
