@@ -1077,6 +1077,71 @@
           </div>
         </div>
 
+        <!-- Project 6 -->
+        <div class="project-card">
+        <div class="project-media">
+          <div class="carousel" id="carousel-6">
+
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <img src="assets/simple_notebooklm_1.png" alt="Simple NotebookLM Q&amp;A Interface">
+                <span class="carousel-caption">Grounded Q&amp;A</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/simple_notebooklm_2.png" alt="Simple NotebookLM LLM Provider Settings">
+                <span class="carousel-caption">Swappable LLM Providers</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/simple_notebooklm_3.png" alt="Simple NotebookLM Quiz Generation">
+                <span class="carousel-caption">Auto-Generated Quiz</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/simple_notebooklm_4.png" alt="Simple NotebookLM Flashcards">
+                <span class="carousel-caption">Flashcards</span>
+              </div>
+            </div>
+
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel('carousel-6', -1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel('carousel-6', 1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active" onclick="goToSlide('carousel-6', 0)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-6', 1)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-6', 2)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-6', 3)"></span>
+            </div>
+
+          </div>
+        </div>
+          <div class="project-body">
+            <p class="project-number">// 06</p>
+            <h3>Simple NotebookLM — Document-Grounded RAG Assistant</h3>
+            <div class="project-tags">
+              <span class="tag">RAG</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">LLMs</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <ul>
+              <li>Built a <strong>document-grounded Q&amp;A system</strong> inspired by Google's NotebookLM, letting users upload PDFs and get cited answers, summaries, quizzes, and flashcards.</li>
+              <li>Implemented a <strong>FastAPI backend</strong> orchestrated with LangChain, using Qdrant for local vector storage and HuggingFace sentence-transformers for embeddings.</li>
+              <li>Supported <strong>runtime-swappable LLM providers</strong> (Google Gemini, OpenAI, Anthropic Claude) without server restarts, plus a Streamlit UI and Typer CLI.</li>
+              <li>Tuned the retrieval pipeline using the <strong>RAGAS evaluation framework</strong>, where adding a cross-encoder reranker improved context precision to 0.925 and recall to 0.940.</li>
+            </ul>
+            <div class="project-pubs">
+              <p>Repository</p>
+              <a href="https://github.com/duytrangiale/simple_notebooklm" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -1308,6 +1373,7 @@
       setInterval(() => moveCarousel(id, 1), intervalMs);
     }
     autoAdvance('carousel-1', 3000);
+    autoAdvance('carousel-6', 3000);
 
     // --- Back to top ---
     const btn = document.getElementById('back-to-top');
