@@ -899,6 +899,80 @@
         <!-- Project 1 -->
         <div class="project-card">
         <div class="project-media">
+          <div class="carousel" id="carousel-urbancool">
+
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <img src="assets/urbancool_heatmap.png" alt="UrbanCool Melbourne heat map">
+                <span class="carousel-caption">Predicted Heat Map</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/urbancool_vegcover.png" alt="UrbanCool Melbourne vegetation cover layer">
+                <span class="carousel-caption">Vegetation Cover Layer</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/urbancool_shap_patterns.png" alt="UrbanCool Melbourne SHAP feature importance">
+                <span class="carousel-caption">Model-Wide SHAP Patterns</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/urbancool_shap_waterfall.png" alt="UrbanCool Melbourne SHAP waterfall for a suburb">
+                <span class="carousel-caption">Per-Suburb SHAP Waterfall</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/urbancool_whatif.png" alt="UrbanCool Melbourne What-If Simulator">
+                <span class="carousel-caption">What-If Simulator</span>
+              </div>
+            </div>
+
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel('carousel-urbancool', -1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel('carousel-urbancool', 1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active" onclick="goToSlide('carousel-urbancool', 0)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-urbancool', 1)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-urbancool', 2)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-urbancool', 3)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-urbancool', 4)"></span>
+            </div>
+
+          </div>
+        </div>
+        <div class="project-body">
+            <p class="project-number">// 01</p>
+            <h3>UrbanCool Melbourne: Urban Heat Vulnerability Mapping</h3>
+            <div class="project-tags">
+              <span class="tag">Geospatial ML</span>
+              <span class="tag">Random Forest</span>
+              <span class="tag">Explainable AI (SHAP)</span>
+              <span class="tag">FastAPI</span>
+            </div>
+            <ul>
+              <li>Built an <strong>end-to-end ML pipeline</strong> predicting urban heat vulnerability across 361 Greater Melbourne suburbs from a Random Forest model, trained on 11,017 rows and validated on a spatially held-out test set (R² = 0.570, RMSE = 1.14°C) to avoid overstating accuracy from neighbouring, spatially-correlated areas.</li>
+              <li>Fused five real-world geospatial and demographic data sources (Victorian Government heat/vegetation polygons, City of Melbourne tree canopy, OpenStreetMap urban morphology, ABS Census data), adapting the pipeline to vector polygon formats once the real data turned out to differ from the raster GeoTIFFs originally planned.</li>
+              <li>Designed and built a <strong>FastAPI + hand-authored HTML/CSS/JS dashboard</strong> (no frontend framework) with an interactive zoomable heat map, per-suburb SHAP waterfall/beeswarm explanations, and a live "what-if" simulator that re-predicts heat as green-infrastructure sliders move.</li>
+              <li>Diagnosed and fixed a real production memory constraint after deployment: cut the model's deployed memory footprint from ~730MB to ~350MB (fitting a free-tier 512MB container) by capping tree count, verifying the accuracy trade-off was noise-level (R² moved by 0.002) before shipping.</li>
+            </ul>
+            <div class="project-pubs">
+              <p>Links</p>
+              <a href="https://urbancool-melbourne.onrender.com/" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/duytrangiale/urbancool_melbourne" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+        <div class="project-media">
           <div class="carousel" id="carousel-1">
       
             <div class="carousel-slides">
@@ -932,7 +1006,7 @@
           </div>
         </div>
         <div class="project-body">
-            <p class="project-number">// 01</p>
+            <p class="project-number">// 02</p>
             <h3>Neural Surrogate for 3D Granular Flow</h3>
             <div class="project-tags">
               <span class="tag">Deep Learning</span>
@@ -961,13 +1035,13 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 3 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/pseudo_lidar.jpg" alt="Pseudo-LiDAR">
           </div>
           <div class="project-body">
-            <p class="project-number">// 02</p>
+            <p class="project-number">// 03</p>
             <h3>Low-Cost Pseudo-LiDAR for 3D Object Detection</h3>
             <div class="project-tags">
               <span class="tag">Computer Vision</span>
@@ -991,13 +1065,13 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 4 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/Exoskeleton.png" alt="Haptic Exoskeleton">
           </div>
           <div class="project-body">
-            <p class="project-number">// 03</p>
+            <p class="project-number">// 04</p>
             <h3>Haptic Hand Exoskeleton for Virtual Reality</h3>
             <div class="project-tags">
               <span class="tag">Robotics</span>
@@ -1025,13 +1099,13 @@
           </div>
         </div>
 
-        <!-- Project 4 -->
+        <!-- Project 5 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/Capstone.gif" alt="Archaeological Toolkit">
           </div>
           <div class="project-body">
-            <p class="project-number">// 04</p>
+            <p class="project-number">// 05</p>
             <h3>Automating the Archaeological Toolkit</h3>
             <div class="project-tags">
               <span class="tag">Systems Engineering</span>
@@ -1056,13 +1130,13 @@
           </div>
         </div>
 
-        <!-- Project 5 -->
+        <!-- Project 6 -->
         <div class="project-card">
           <div class="project-media" style="background: linear-gradient(135deg, #e8f5e9, #c8e6c9); justify-content: center; align-items: center;">
             <i class="fa-solid fa-database" style="font-size: 4rem; color: #2e7d32; opacity: 0.5;"></i>
           </div>
           <div class="project-body">
-            <p class="project-number">// 05</p>
+            <p class="project-number">// 06</p>
             <h3>DEM Data Tools &amp; Physical Metrics</h3>
             <div class="project-tags">
               <span class="tag">Scientific Computing</span>
@@ -1077,7 +1151,7 @@
           </div>
         </div>
 
-        <!-- Project 6 -->
+        <!-- Project 7 -->
         <div class="project-card">
         <div class="project-media">
           <div class="carousel" id="carousel-6">
@@ -1118,7 +1192,7 @@
           </div>
         </div>
           <div class="project-body">
-            <p class="project-number">// 06</p>
+            <p class="project-number">// 07</p>
             <h3>Simple NotebookLM — Document-Grounded RAG Assistant</h3>
             <div class="project-tags">
               <span class="tag">RAG</span>
@@ -1373,6 +1447,7 @@
       setInterval(() => moveCarousel(id, 1), intervalMs);
     }
     autoAdvance('carousel-1', 3000);
+    autoAdvance('carousel-urbancool', 3000);
     autoAdvance('carousel-6', 3000);
 
     // --- Back to top ---
