@@ -899,6 +899,71 @@
         <!-- Project 1 -->
         <div class="project-card">
         <div class="project-media">
+          <div class="carousel" id="carousel-ecoriskau">
+
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <img src="assets/ecoriskau_map.png" alt="EcoRiskAU climate risk choropleth map of Victoria">
+                <span class="carousel-caption">Climate Risk Map</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/ecoriskau_detail_panel.png" alt="EcoRiskAU ecosystem detail panel with climate chart">
+                <span class="carousel-caption">Per-Patch Climate Detail</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/ecoriskau_crosswalk.png" alt="EcoRiskAU verified Mountain Ash ecosystem crosswalk">
+                <span class="carousel-caption">Verified Ecosystem Crosswalk</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/ecoriskau_rle_browser.png" alt="EcoRiskAU AI-extracted RLE risk assessment browser">
+                <span class="carousel-caption">AI-Extracted Risk Assessments</span>
+              </div>
+            </div>
+
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel('carousel-ecoriskau', -1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel('carousel-ecoriskau', 1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active" onclick="goToSlide('carousel-ecoriskau', 0)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-ecoriskau', 1)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-ecoriskau', 2)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-ecoriskau', 3)"></span>
+            </div>
+
+          </div>
+        </div>
+        <div class="project-body">
+            <p class="project-number">// 01</p>
+            <h3>EcoRiskAU: Geospatial + LLM Ecosystem Climate-Risk Explorer</h3>
+            <div class="project-tags">
+              <span class="tag">Geospatial ETL</span>
+              <span class="tag">RAG / LangGraph</span>
+              <span class="tag">PostGIS + pgvector</span>
+              <span class="tag">React + Leaflet</span>
+            </div>
+            <ul>
+              <li>Built an <strong>ETL pipeline</strong> fusing three real geospatial/climate data sources (NVIS vegetation classification, 10 years of SILO climate grids, DEA satellite NDVI imagery) into a PostGIS database, computing a z-score-normalised composite climate risk score across ~2,900 Victorian vegetation patches.</li>
+              <li>Built a <strong>LangGraph + Gemini RAG extraction pipeline</strong> over real IUCN Red List of Ecosystems assessment PDFs, hand-checking extraction accuracy against source pages rather than assuming it, and adding a deterministic numeric-grounding check that catches figures the model states but the source text never actually contains.</li>
+              <li>Built a <strong>FastAPI backend and a React + Leaflet + Plotly dashboard</strong>: a bbox-filtered choropleth map of every vegetation patch, per-patch climate/satellite-greenness charts, and a browsable library of AI-extracted ecosystem risk assessments with page citations.</li>
+              <li>Found the project's own vegetation data too coarse to support one planned feature (matching a specific ecosystem assessment to a map area), so sourced a second, government-maintained geospatial dataset live via WFS instead of faking the match; also wrote and validated Terraform IaC for a GCP deployment.</li>
+            </ul>
+            <div class="project-pubs">
+              <p>Repository</p>
+              <a href="https://github.com/duytrangiale/eco_risk_au" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+        <div class="project-media">
           <div class="carousel" id="carousel-urbancool">
 
             <div class="carousel-slides">
@@ -942,7 +1007,7 @@
           </div>
         </div>
         <div class="project-body">
-            <p class="project-number">// 01</p>
+            <p class="project-number">// 02</p>
             <h3>UrbanCool Melbourne: Urban Heat Vulnerability Mapping</h3>
             <div class="project-tags">
               <span class="tag">Geospatial ML</span>
@@ -970,7 +1035,7 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 3 -->
         <div class="project-card">
         <div class="project-media">
           <div class="carousel" id="carousel-1">
@@ -1006,7 +1071,7 @@
           </div>
         </div>
         <div class="project-body">
-            <p class="project-number">// 02</p>
+            <p class="project-number">// 03</p>
             <h3>Neural Surrogate for 3D Granular Flow</h3>
             <div class="project-tags">
               <span class="tag">Deep Learning</span>
@@ -1042,13 +1107,13 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 4 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/pseudo_lidar.jpg" alt="Pseudo-LiDAR">
           </div>
           <div class="project-body">
-            <p class="project-number">// 03</p>
+            <p class="project-number">// 04</p>
             <h3>Low-Cost Pseudo-LiDAR for 3D Object Detection</h3>
             <div class="project-tags">
               <span class="tag">Computer Vision</span>
@@ -1072,13 +1137,13 @@
           </div>
         </div>
 
-        <!-- Project 4 -->
+        <!-- Project 5 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/Exoskeleton.png" alt="Haptic Exoskeleton">
           </div>
           <div class="project-body">
-            <p class="project-number">// 04</p>
+            <p class="project-number">// 05</p>
             <h3>Haptic Hand Exoskeleton for Virtual Reality</h3>
             <div class="project-tags">
               <span class="tag">Robotics</span>
@@ -1106,13 +1171,13 @@
           </div>
         </div>
 
-        <!-- Project 5 -->
+        <!-- Project 6 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/Capstone.gif" alt="Archaeological Toolkit">
           </div>
           <div class="project-body">
-            <p class="project-number">// 05</p>
+            <p class="project-number">// 06</p>
             <h3>Automating the Archaeological Toolkit</h3>
             <div class="project-tags">
               <span class="tag">Systems Engineering</span>
@@ -1137,7 +1202,7 @@
           </div>
         </div>
 
-        <!-- Project 6 -->
+        <!-- Project 7 -->
         <div class="project-card">
         <div class="project-media">
           <div class="carousel" id="carousel-6">
@@ -1178,7 +1243,7 @@
           </div>
         </div>
           <div class="project-body">
-            <p class="project-number">// 06</p>
+            <p class="project-number">// 07</p>
             <h3>Simple NotebookLM — Document-Grounded RAG Assistant</h3>
             <div class="project-tags">
               <span class="tag">RAG</span>
