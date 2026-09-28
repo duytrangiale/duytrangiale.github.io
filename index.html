@@ -899,6 +899,70 @@
         <!-- Project 1 -->
         <div class="project-card">
         <div class="project-media">
+          <div class="carousel" id="carousel-hoistdigitwin">
+
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <img src="assets/hoistdigitwin_schematic.png" alt="HoistDigiTwin live schematic of the mine hoist circuit">
+                <span class="carousel-caption">Live Schematic</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/hoistdigitwin_controls.png" alt="HoistDigiTwin surrogate controls and sensitivity chart">
+                <span class="carousel-caption">Live Surrogate Predictions</span>
+              </div>
+              <div class="carousel-slide">
+                <img src="assets/hoistdigitwin_mlflow.png" alt="HoistDigiTwin MLflow experiment comparison">
+                <span class="carousel-caption">MLflow Experiment Tracking</span>
+              </div>
+            </div>
+
+            <button class="carousel-btn carousel-prev" onclick="moveCarousel('carousel-hoistdigitwin', -1)">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn carousel-next" onclick="moveCarousel('carousel-hoistdigitwin', 1)">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="carousel-dots">
+              <span class="carousel-dot active" onclick="goToSlide('carousel-hoistdigitwin', 0)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-hoistdigitwin', 1)"></span>
+              <span class="carousel-dot"        onclick="goToSlide('carousel-hoistdigitwin', 2)"></span>
+            </div>
+
+          </div>
+        </div>
+        <div class="project-body">
+            <p class="project-number">// 01</p>
+            <h3>HoistDigiTwin: Mine Hoist Digital Twin &amp; Predictive Maintenance</h3>
+            <div class="project-tags">
+              <span class="tag">Digital Twin</span>
+              <span class="tag">Discrete Event Simulation</span>
+              <span class="tag">Predictive Maintenance</span>
+              <span class="tag">FastAPI + React</span>
+            </div>
+            <ul>
+              <li>Built a <strong>digital twin of a mine hoist circuit</strong> end to end (SimPy discrete-event simulation): two ore sources, three bins, and two skips sharing one winder, validated against a reference production year to within 5% every month.</li>
+              <li>Trained an <strong>XGBoost / Gaussian process surrogate</strong> that reproduces the simulation in under a millisecond instead of about 10 seconds (about 2% error on settings it never trained on), then used it to search for operating settings that lift monthly output by about 80%, verified against the real simulation rather than trusted blindly.</li>
+              <li>Built a <strong>remaining useful life model</strong> for the winder, first proven on NASA's public C-MAPSS turbofan dataset (a linear baseline, XGBoost, and an LSTM; best RMSE about 15 cycles), then applied the same technique to the twin's own simulated winder health signal.</li>
+              <li>Compared <strong>reactive versus predictive maintenance</strong> inside the twin over many replications (about 27,000 more tonnes and 80 fewer downtime hours a year, p &lt; 0.001), and shipped it all behind a <strong>FastAPI backend and React dashboard</strong> with a live animated schematic and MLflow-tracked experiments.</li>
+            </ul>
+            <div class="project-pubs">
+              <p>Links</p>
+              <a href="https://hoistdigitwin-frontend.onrender.com" target="_blank">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                Live Demo
+              </a>
+              <a href="https://github.com/duytrangiale/HoistDigiTwin" target="_blank">
+                <i class="fa-brands fa-github"></i>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+        <div class="project-media">
           <div class="carousel" id="carousel-ecoriskau">
 
             <div class="carousel-slides">
@@ -937,7 +1001,7 @@
           </div>
         </div>
         <div class="project-body">
-            <p class="project-number">// 01</p>
+            <p class="project-number">// 02</p>
             <h3>EcoRiskAU: Geospatial + LLM Ecosystem Climate-Risk Explorer</h3>
             <div class="project-tags">
               <span class="tag">Geospatial ETL</span>
@@ -961,7 +1025,7 @@
           </div>
         </div>
 
-        <!-- Project 2 -->
+        <!-- Project 3 -->
         <div class="project-card">
         <div class="project-media">
           <div class="carousel" id="carousel-urbancool">
@@ -1007,7 +1071,7 @@
           </div>
         </div>
         <div class="project-body">
-            <p class="project-number">// 02</p>
+            <p class="project-number">// 03</p>
             <h3>UrbanCool Melbourne: Urban Heat Vulnerability Mapping</h3>
             <div class="project-tags">
               <span class="tag">Geospatial ML</span>
@@ -1035,7 +1099,7 @@
           </div>
         </div>
 
-        <!-- Project 3 -->
+        <!-- Project 4 -->
         <div class="project-card">
         <div class="project-media">
           <div class="carousel" id="carousel-1">
@@ -1071,7 +1135,7 @@
           </div>
         </div>
         <div class="project-body">
-            <p class="project-number">// 03</p>
+            <p class="project-number">// 04</p>
             <h3>Neural Surrogate for 3D Granular Flow</h3>
             <div class="project-tags">
               <span class="tag">Deep Learning</span>
@@ -1107,13 +1171,13 @@
           </div>
         </div>
 
-        <!-- Project 4 -->
+        <!-- Project 5 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/pseudo_lidar.jpg" alt="Pseudo-LiDAR">
           </div>
           <div class="project-body">
-            <p class="project-number">// 04</p>
+            <p class="project-number">// 05</p>
             <h3>Low-Cost Pseudo-LiDAR for 3D Object Detection</h3>
             <div class="project-tags">
               <span class="tag">Computer Vision</span>
@@ -1137,13 +1201,13 @@
           </div>
         </div>
 
-        <!-- Project 5 -->
+        <!-- Project 6 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/Exoskeleton.png" alt="Haptic Exoskeleton">
           </div>
           <div class="project-body">
-            <p class="project-number">// 05</p>
+            <p class="project-number">// 06</p>
             <h3>Haptic Hand Exoskeleton for Virtual Reality</h3>
             <div class="project-tags">
               <span class="tag">Robotics</span>
@@ -1178,13 +1242,13 @@
           </div>
         </div>
 
-        <!-- Project 6 -->
+        <!-- Project 7 -->
         <div class="project-card">
           <div class="project-media">
             <img src="assets/Capstone.gif" alt="Archaeological Toolkit">
           </div>
           <div class="project-body">
-            <p class="project-number">// 06</p>
+            <p class="project-number">// 07</p>
             <h3>Automating the Archaeological Toolkit</h3>
             <div class="project-tags">
               <span class="tag">Systems Engineering</span>
@@ -1209,7 +1273,7 @@
           </div>
         </div>
 
-        <!-- Project 7 -->
+        <!-- Project 8 -->
         <div class="project-card">
         <div class="project-media">
           <div class="carousel" id="carousel-6">
@@ -1250,7 +1314,7 @@
           </div>
         </div>
           <div class="project-body">
-            <p class="project-number">// 07</p>
+            <p class="project-number">// 08</p>
             <h3>Simple NotebookLM — Document-Grounded RAG Assistant</h3>
             <div class="project-tags">
               <span class="tag">RAG</span>
@@ -1508,6 +1572,7 @@
     autoAdvance('carousel-urbancool', 3000);
     autoAdvance('carousel-6', 3000);
     autoAdvance('carousel-ecoriskau', 3000);
+    autoAdvance('carousel-hoistdigitwin', 3000);
 
     // --- Back to top ---
     const btn = document.getElementById('back-to-top');
